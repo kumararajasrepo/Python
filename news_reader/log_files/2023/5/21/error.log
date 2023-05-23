@@ -1,0 +1,165 @@
+ERROR:root:name 'response' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 17, in news_compile
+    soup = BeautifulSoup(response.text, 'html.parser')
+                         ^^^^^^^^
+NameError: name 'response' is not defined
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 29, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 29, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 29, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 31, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 32, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 32, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 32, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 32, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 32, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 32, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 32, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 33, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.
+ERROR:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 33, in news_compile
+    aimage=article_images[arindex]
+           ~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: list index out of range
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.

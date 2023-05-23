@@ -1,0 +1,1835 @@
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 23, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:'WSGIRequest' object has no attribute 'Get'
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 12, in load_news
+    print(request.Get)
+          ^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:'WSGIRequest' object has no attribute 'Get'
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 12, in load_news
+    print(request.Get)
+          ^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 24, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 24, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 24, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'gallery' not found. 'gallery' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'gallery' not found. 'gallery' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 21, in load_news
+    return render(request, 'news_loader/news_space.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'load_news' not found. 'load_news' is not a valid view function or pattern name.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    api_url=config_data["news_api"]+"?"+title
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    api_url=config_data["news_api"]+"?"+title
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    api_url=config_data["news_api"]+"?"+title
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    api_url=config_data["news_api"]+"?"+title
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /news
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    api_url=config_data["news_api"]+"?"+title
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /news
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 18, in load_news
+    api_url=config_data["news_api"]+title
+            ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 18, in load_news
+    api_url=config_data["news_api"]+title
+            ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 17, in load_news
+    title="?"+title
+          ~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py", line 16, in load_news
+    print("title:"+title)
+          ~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view news_loader.views.load_news didn't return an HttpResponse object. It returned None instead.
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_loader\views.py changed, reloading.
+ERROR:root:can only concatenate str (not "NoneType") to str
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py", line 16, in news_compile
+    response = requests.get(config_data["google_news_url"]+title)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+ERROR:django.request:Internal Server Error: /api/get_news/
+Traceback (most recent call last):
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\Python-Django\django_cource_env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\news_api\views.py", line 14, in get_news
+    return Response(json.dumps([article.__dict__ for article in nwarticles]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+INFO:django.utils.autoreload:C:\Users\Kumararaja Sethuraja\source\repos\projects\news_reader\gnews\consumer.py changed, reloading.

@@ -1,0 +1,8 @@
+#Config Entries
+
+google_news_url="https://news.google.com/search?hl=en-IN&gl=IN&q="
+news_api="http://127.0.0.1:8000/api/get_news"
+article_class="ipQwMb ekueJc RD0gLb"
+image_class="tvs3Id QwxBBf"
+article_link="https://news.google.com"
+log_folder="log_files"
